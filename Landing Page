@@ -1,0 +1,1157 @@
+    <!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+header:hover {
+    background-color: #080102;
+    transform: scale(1.02);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    transition: text-shadow 0.3s, transform 0.3s;
+}
+header h1:hover {
+    text-shadow: 2px 2px 4px black;
+    transform: scale(1.05);
+}
+header .container h1 a{
+    text-decoration: none;
+    color:white;
+}
+header .container h1 a:hover{
+    color:rgb(6, 148, 230);
+    text-decoration-color: #6d0aee;
+}
+
+header nav {
+    perspective: 1000px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+    position: relative;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+header nav ul li a:hover {
+    color: rgb(241, 239, 245);
+    transform: translateY(-5px) rotateX(2deg); 
+    box-shadow: 0 8px 16px rgba(248, 246, 246, 0.3);
+    text-decoration: underline;
+    background-color: #6d0aee; 
+    transform: scale(1.02);
+}
+
+header:hover {
+   background-color:#0d0e0d ;
+   text-shadow: white 5px;
+}
+
+.middlef {
+    background-image: url('jmrs.pngs');
+    width: 100%;
+    display: flex;
+}
+
+.middle {
+    border: 2px solid rgb(225, 223, 243);
+    animation: borderAnimation 7s ;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.middlef img {
+    height: 300px;
+    width: 33.3%;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.middlef img:hover {
+    transform: scale(1.1); 
+    opacity: 0.8;
+}
+
+
+
+header h1 {
+    font-size: 24px;
+    transition: text-shadow 0.3s, transform 0.3s;
+}
+
+header h1:hover {
+    text-shadow: 12px 2px 5px black;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+header nav ul li a:hover {
+    color: rgb(241, 239, 245);
+    text-shadow: 20px whitesmoke;
+}
+
+.hero {
+    background: url('jmrs.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero .btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about, .services {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about h2, .services h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.service-item {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+}
+
+footer nav ul li {
+    margin-left: 20px;
+}
+
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+</style>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">SDV</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="middle">
+        <img src="jmrs.jpg" alt="Logo" class="animated-logo"  height=auto width="100%">
+        <div class="middlef">
+            <img src="firstone.jpg" alt="Image 1">
+            <img src="teach.jpg" alt="Image 2">
+            <img src="secondone.jpg" alt="Image 3">
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+    <!-- about.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-image:url(servicesback.jpg);
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .text {
+            background: #fff;
+            padding: 50px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: 0.7s;
+        }
+        .text:hover{
+            background-image: url(servicesback.jpg);
+            color:white;
+        }
+        .text h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .text p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .text a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .text a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>ABOUT US</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="text">
+        <h1>About</h1>
+        <p>We are dedicated professionals with years of experience in teaching and mentoring students in Java & Python and other programming languages. Our goal is to provide top-notch education and support to help in their academic and professional endeavors.</p>
+        <p>We led by the esteemed Ramji Sir, specializes in delivering high-quality instruction and personalized guidance. We are passionate about technology and committed to helping students achieve their goals.</p>
+        <p>For more information about our past achievements and to view the results of previous years, please visit our <a href="pyr.html" style="text-decoration: none;">Previous Year Results</a> page.</p>
+    </div>
+</body>
+</html>
+
+
+   <!-- previous year result (pyr) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previous 5 Years Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-image: url(pyrb.jpg);
+        }
+
+        header {
+            background-color: #030303;
+            color: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        header:hover {
+            background-color: #504d4d;
+            transform: scale(1.02);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            transition: text-shadow 0.3s, transform 0.3s;
+        }
+
+        header h1:hover {
+            text-shadow: 2px 2px 4px black;
+            transform: scale(1.05);
+        }
+
+        header nav {
+            perspective: 1000px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+            position: relative;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.8s, transform 0.3s, box-shadow 0.3s;
+            display: block;
+            padding: 10px 15px;
+            border-radius: 4px;
+        }
+
+        header nav ul li a:hover {
+            color: rgb(10, 10, 10);
+            transform: translateY(-5px) rotateX(2deg); 
+            box-shadow: 0 8px 16px rgba(248, 246, 246, 0.3);
+            background-color: white;
+            text-shadow: red;
+            text-decoration: underline;
+        }
+
+        .results-section {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            box-shadow: 0 4px 8px rgba(250, 11, 11, 0.1);
+        }
+
+        .results-section h2 {
+            color: #0e0d0d;
+            margin-bottom: 20px;
+        }
+
+        .result-card {
+            display: block;
+            background: #fff;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 10px;
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+            text-align: center;
+            text-decoration: none; 
+            color: #0a0a0a; 
+        }
+
+        .result-card h3 {
+            margin: 0 0 10px;
+        }
+
+        .result-card p {
+            margin: 0;
+        }
+
+        .result-card:hover {
+            transform: scale(1.05);
+            box-shadow: 9 25px 16px rgba(168, 238, 5, 0.3);
+            background-image: url(pyrb.jpg);
+            color: #eeeaea;
+            perspective: 1000px;
+            transform: scale(1.05) rotateX(5deg);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>JAVA MATLAB RAMJI SIR</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="results-section">
+        <h2>Results from the Previous 5 Years</h2>
+        <a href="" class="result-card">
+            <h3>2019</h3>
+            <img src="" alt="">
+            <p>Result for 2019</p>
+        </a>
+        <a href="" class="result-card">
+            <h3>2020</h3>
+            <p>Result for 2020</p>
+        </a>
+        <a href="" class="result-card">
+            <h3>2021</h3>
+            <p>Result for 2021</p>
+        </a>
+        <a href="" class="result-card">
+            <h3>2022</h3>
+            <p>Result for 2022</p>
+        </a>
+        <a href="" class="result-card">
+            <h3>2023</h3>
+            <p>Result for 2023</p>
+        </a>
+    </section>
+</body>
+</html>
+
+
+
+    <!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+    body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-image: url(back.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            line-height: 1.6;
+            color:white;
+    }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        header:hover {
+            background-color: #080102;
+            transform: scale(1.02);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            transition:  transform 0.3s;
+            text-shadow: white;
+        }
+
+        header h1:hover {
+            text-shadow: 2px 2px 4px rgb(233, 229, 229);
+            transform: scale(1.05);
+        }
+
+        header nav {
+            perspective: 1000px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+            position: relative;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+            display: block;
+            padding: 10px 15px;
+            border-radius: 4px;
+        }
+
+        header nav ul li a:hover {
+            color: rgb(241, 239, 245);
+            transform: translateY(-5px) rotateX(2deg); 
+            box-shadow: 0 8px 16px rgba(248, 246, 246, 0.3);
+            text-decoration: underline;
+            background-color: #6d0aee; 
+            transform: scale(1.02);
+        }
+
+        header:hover {
+        background-color:#0d0e0d ;
+        text-shadow: white 5px;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contact-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .social-media-links {
+            margin: 20px 0;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #f5f2f2;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .social-link img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-link:hover img {
+            transform: scale(1.2);
+        }
+
+        .social-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .contact-form {
+            margin-top: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form label {
+            margin: 10px 0 5px;
+            color: #333;
+            transition: color 0.3s ease, background 0.3s ease;
+        }
+
+        .contact-form label:hover {
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5); 
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #0c0c0c;
+        }
+
+        .contact-form button {
+            padding: 10px;
+            background: #080808;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background: transparent;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            transition: background 0.3s ease;
+        }
+
+        footer:hover {
+            background: #444;
+        }
+
+        footer nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        footer nav ul li {
+            margin: 0 10px;
+        }
+
+        footer nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+
+        footer nav ul li a:hover {
+            color: #f0f0f0;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Contact Us</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="contact-container">
+            <h2>Get in Touch</h2>
+            <p>Feel free to reach out through the following                                                                                                                                                                                  channels:</p>
+
+            <div class="social-media-links" style="color:white">
+                <a class="social-link">
+                    <img src="calling.png" alt="CALL">
+                    Phone : XXXXXXXXXX
+                </a>
+                <a href="" target="_blank" class="social-link">
+                    <img src="instagram.jpg" alt="Instagram">
+                    Instagram
+                </a>
+                <a href="" target="_blank" class="social-link">
+                    <img src="facebook.jpg" alt="Facebook">
+                    Facebook
+                </a>
+                <a href="" target="_blank" class="social-link">
+                    <img src="whatsapp.jpg" alt="WhatsApp">
+                    WhatsApp
+                </a>
+                <a href="" target="_blank" class="social-link">
+                    <img src="youtube.jpg" alt="YouTube">
+                    YouTube
+                </a>
+                <a href="" target="_blank" class="social-link">
+                    <img src="telegram.png" alt="Telegram">
+                    Telegram
+                </a>
+            </div>
+
+            <section class="contact-form">
+                <h2>Contact Form</h2>
+                <form action="" method="post" style="background-color: transparent;">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required style="background: transparent;color:white">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required style="background: transparent;color:white">
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required style="background: transparent;color:white"></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+    <!-- services.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVICES</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;transition: background 0.3s ease;
+            padding: 0;
+            background-image: url('servicesback.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        header {
+            background-color: #3a4149;
+            color: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        header:hover {
+            background-color: #070707;
+            transform: scale(1.02);
+            color:rgb(236, 236, 236);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            transition: text-shadow 0.3s, transform 0.3s;
+        }
+
+        header h1:hover {
+            text-shadow: 2px 2px 4px rgb(243, 242, 242);
+            transform: scale(1.05);
+        }
+
+        
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+            position: relative;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.6s, transform 0.9s, box-shadow 0.3s;
+            display: block;
+            padding: 10px 15px;
+            border-radius: 4px;
+            text-decoration: none;  
+        }
+
+        header nav ul li a:hover {
+            color: rgb(249, 249, 250);
+            text-decoration: underline;
+            transform: translateY(-5px) rotateX(2deg); 
+            box-shadow: 0 15px 16px rgba(193, 4, 250, 0.3);
+            background-color: black;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        #services {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .services {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transform-style: preserve-3d;
+            transform: rotateX(0deg) rotateY(0deg);
+        }
+        
+        .first, .second {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .first .grade-item, .second .grade-item {
+            flex: 1 1 calc(50% - 20px);
+            max-width: calc(50% - 20px);
+        }
+        
+        .grade-item {
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 2px solid #0a0a0a;
+            padding: 20px;
+            background-color: #fdfbfb;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        
+        .grade-item img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #ddd;
+            transition: transform 0.3s ease;
+        }
+        
+        .grade-item h3 {
+            margin-top: 15px;
+            font-size: 1.5em;
+        }
+        
+        .grade-item p {
+            margin: 10px 0;
+        }
+        
+        .grade-item:hover {
+            transform: translateY(-10px) scale(1.05) rotateY(5deg);
+            box-shadow: 0 12px 24px rgba(10, 10, 10, 0.3);
+            color: #fff;
+            background-color: black;
+            border: 2px solid #7e7272;
+        }
+        
+        .grade-item img:hover {
+            transform: scale(1.1) rotate(2deg);
+        }
+        
+        .grade-item button {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        
+        .grade-item button:hover {
+            background-color: #fff;
+            color: #000;
+        }
+        
+        .popup {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+        
+        .popup-content {
+            background: #e9e9e9;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 500px;
+            width: 100%;
+            position: relative;
+            color: black;
+            transition: 0.8s;
+        }
+        
+        .popup-content:hover {
+            background-color: rgb(13, 218, 245);
+        }
+        
+        .popup-content h2 {
+            margin-top: 0;
+        }
+        
+        .popup-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 1.5em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Contact Us</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="first">
+                <div class="grade-item" id="grade-9">
+                    <img src="servicesback1.jpg" alt="9th Grade" class="grade-image"  style="height:250px; width: 250px;">
+                    <h3>9th Grade</h3>
+                    <p><strong>Fees:</strong> 8500</p>
+                    <p><strong>Registration Fees:</strong> 200/-</p>
+                    <button onclick="openPopup('popup-9')">More Info</button>
+                </div>
+                <div class="grade-item" id="grade-10">
+                    <img src="servicesback1.jpg" alt="10th Grade" class="grade-image" style="height:250px; width: 250px;">
+                    <h3>10th Grade</h3>
+                    <p><strong>Fees:</strong> 8500</p>
+                    <p><strong>Registration Fees:</strong> 200/-</p>
+                    <button onclick="openPopup('popup-10')">More Info</button>
+                </div>
+            </div>
+            <br><br><br><br><br><br>
+            <div class="second">
+                <div class="grade-item" id="grade-11">
+                    <img src="servicesback1.jpg" alt="11th Grade" class="grade-image" style="height:250px; width: 250px;">
+                    <h3>11th Grade</h3>
+                    <p><strong>Fees:</strong> 9500/-</p>
+                    <p><strong>Registration Fees:</strong> 200/-</p>
+                    <button onclick="openPopup('popup-11')">More Info</button>
+                </div>
+                <div class="grade-item" id="grade-12">
+                    <img src="servicesback1.jpg" alt="12th Grade" class="grade-image" style="height:250px; width: 250px;">
+                    <h3>12th Grade</h3>
+                    <p><strong>Fees:</strong> 9500/-</p>
+                    <p><strong>Registration Fees:</strong>200/-</p>
+                    <button onclick="openPopup('popup-12')">More Info</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div id="popup-9" class="popup">
+        <div class="popup-content">
+            <span class="popup-close" onclick="closePopup('popup-9')">&times;</span>
+            <h2>9th Grade Course Details</h2>
+            <p><strong>Course Schedule:</strong> Monday to Friday, 9 AM to 3 PM</p>
+            <p><strong>Instructor:</strong>SHRI DAYAL VERMA</p>
+            <p><strong>Topics:</strong> Basics , If-Else-If , Switch-Case , Series , Pattern</p>
+        </div>
+    </div>
+    
+    <div id="popup-10" class="popup">
+        <div class="popup-content">
+            <span class="popup-close" onclick="closePopup('popup-10')">&times;</span>
+            <h2>10th Grade Course Details</h2>
+            <p><strong>Course Schedule:</strong>MWF : (6-7) & TTS : (6-7) & TTS : (7-8)</p>
+            <p><strong>Instructor:</strong>SHRI DAYAL VERMA</p>
+            <p><strong>Topics:</strong> 9th Course (whole) + Array , String , Function </p>
+        </div>
+    </div>
+
+    <div id="popup-11" class="popup">
+        <div class="popup-content">
+            <span class="popup-close" onclick="closePopup('popup-11')">&times;</span>
+            <h2>11th Grade Course Details</h2>
+            <p><strong>Course Schedule:</strong> TTS : (4-5)</p>
+            <p><strong>Instructor:</strong>SHRI DAYAL VERMA</p>
+            <p><strong>Topics:</strong> Boolean Algebra , Function , Array , String , Recursion , File Handling</p>
+        </div>
+    </div>
+
+    <div id="popup-12" class="popup">
+        <div class="popup-content">
+            <span class="popup-close" onclick="closePopup('popup-12')">&times;</span>
+            <h2>12th Grade Course Details</h2>
+            <p><strong>Course Schedule:</strong> MWF : (7-8) & TTS : (4-5)</p>
+            <p><strong>Instructor:</strong>SHRI DAYAL VERMA</p>
+            <p><strong>Topics:</strong> Boolean Algebra , Function , Array , String , Recursion , Object Passing , Data Structures </p>
+        </div>
+    </div>
+
+    <script>
+        function openPopup(id) {
+            document.getElementById(id).style.display = 'flex';
+        }
+
+        function closePopup(id) {
+            document.getElementById(id).style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+
+
+
