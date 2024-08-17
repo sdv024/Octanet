@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <form id="todo-form">
+            <input type="text" id="task-input" placeholder="Add a new task">
+            <button type="submit">Add Task</button>
+        </form>
+        <ul id="task-list">
+    
+        </ul>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('todo-form');
+    const input = document.getElementById('task-input');
+    const taskList = document.getElementById('task-list');
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const taskText = input.value.trim();
+        if (taskText !== '') {
+            addTask(taskText);
+            input.value = '';
+        }
+    });
+
+    function addTask(text) {
+        const li = document.createElement('li');
+        li.textContent = text;
+
+        const removeButton = document.createElement('button');
+        removeButton.textContent = 'Remove';
+        removeButton.classList.add('remove');
+        removeButton.addEventListener('click', function() {
+            taskList.removeChild(li);
+        });
+
+        li.appendChild(removeButton);
+        taskList.appendChild(li);
+    }
+});
+    </script>
+</body>
+</html>
